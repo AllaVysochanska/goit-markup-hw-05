@@ -46,7 +46,7 @@
           <h1 class="hiro-title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="hiro-button" type="button">Заказать услугу</button>
+          <button class="hiro-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -96,28 +96,31 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
-            <li>
+            <li class="work-item">
               <img
                 class="card-image"
                 src="./images/work-list/programer_working_his_desk_office1.jpg"
                 alt="Програмер в офисе"
                 width="370"
               />
+            <p class="description">Десктопные приложения</p> 
             </li>
-            <li>
+            <li class="work-item">
               <img
                 class="card-image"
                 src="./images/work-list/ui_designer_working_mobile_interface2.jpg"
                 alt="Юай-дизайнер"
                 width="370"
               />
+              <p class="description">Мобильные приложения</p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 class="card-image"
                 src="./images/work-list/web_designer_working_coloure_grafic3.jpg"
                 alt="Веб-дизайнер"
               />
+              <p class="description">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -453,5 +456,17 @@
       </div>
     </div>
     </footer>
-  </body>
+
+    <!-- Модальное окно -->
+<div class="backdrop is-hidden" data-modal>
+   <div class="modal">
+   <button class="modal-close" type="button" data-modal-close>
+   <svg width="30" height="30"><use href="./images/icons.svg#icon-close"></use></svg>
+  </button>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
+
+</body>
 </html>
